@@ -1,6 +1,6 @@
 {
   "{apps,libraries,tools}/**/*.{js,jsx,ts,tsx,vue}": [
-    "node --max_old_space_size=8192 common/autoinstallers/rush-scripts/node_modules/eslint/bin/eslint --fix --color --cache --quiet",
+    "node --max_old_space_size=8192 common/autoinstallers/rush-lint/node_modules/eslint/bin/eslint --fix --color --cache --quiet",
     "prettier --write"
   ],
   "{apps,libraries,tools}/**/*.{css,less,md,json}": [

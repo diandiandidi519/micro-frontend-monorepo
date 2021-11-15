@@ -1,0 +1,9 @@
+{
+  "name": "eslint-config",
+  "version": "1.0.0",
+  "description": "eslint ruleset for bits",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {}
+}
