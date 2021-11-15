@@ -8,6 +8,8 @@
     "@microsoft/rush-lib": "^5.56.0",
     "eslint": "^8.2.0",
     "execa": "^5.1.1",
-    "lint-staged": "^12.0.2"
+    "lint-staged": "^12.0.2",
+    "commitizen": "^4.2.4",
+    "git-cz": "^4.8.0"
   }
 }

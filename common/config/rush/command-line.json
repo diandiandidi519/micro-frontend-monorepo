@@ -12,6 +12,16 @@
    */
   "commands": [
     {
+      "name": "cz",
+      "commandKind": "global",
+      "summary": "Used by the commit-msg Git hook. This command invokes commitizen to reformat messages.",
+      "safeForSimultaneousRushProcesses": true,
+
+      "autoinstallerName": "rush-lint",
+
+      "shellCommand": "commitizen"
+    },
+    {
       "name": "commitlint",
       "commandKind": "global",
       "summary": "Used by the commit-msg Git hook. This command invokes commitlint to lint commit message.",
