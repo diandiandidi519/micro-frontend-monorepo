@@ -6,7 +6,7 @@ dir.forEach((item) => {
   const result = fs.readdirSync(path.join(__dirname, item))
   scopes.push(...result);
 })
-scopes = scopes.filter(item => item !== '.DS_Store')
+scopes = scopes.filter(item => !['.DS_Store', '.gitkeep'].includes(item))
 module.exports = {
   disableEmoji: false,
   format: '{type}{scope}: {emoji}{subject}',
