@@ -1,0 +1,13 @@
+{
+  "name": "rush-lint",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@commitlint/cli": "^14.1.0",
+    "@commitlint/config-conventional": "^14.1.0",
+    "@microsoft/rush-lib": "^5.56.0",
+    "eslint": "^8.2.0",
+    "execa": "^5.1.1",
+    "lint-staged": "^12.0.2"
+  }
+}

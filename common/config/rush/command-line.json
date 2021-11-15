@@ -12,6 +12,23 @@
    */
   "commands": [
     {
+      "name": "commitlint",
+      "commandKind": "global",
+      "summary": "Used by the commit-msg Git hook. This command invokes commitlint to lint commit message.",
+      "autoinstallerName": "rush-lint",
+      "shellCommand": "node common/autoinstallers/rush-lint/commitlint.js"
+    },
+    {
+      "name": "lint-staged",
+      "commandKind": "global",
+      "summary": "Used by the pre-commit Git hook. This command invokes lint-staged to reformat staged changes.",
+      "safeForSimultaneousRushProcesses": true,
+
+      "autoinstallerName": "rush-lint",
+
+      "shellCommand": "lint-staged"
+    },
+    {
       "name": "prettier",
       "commandKind": "global",
       "summary": "Used by the pre-commit Git hook. This command invokes Prettier to reformat staged changes.",
