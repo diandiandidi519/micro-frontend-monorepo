@@ -10,10 +10,10 @@
     "node-sass": "^5.0.0",
     "react": "^17.0.0-rc.0",
     "react-dom": "^17.0.0-rc.0",
-    "regenerator-runtime": "^0.13.7",
-    "single-spa-react": "^4.3.0"
+    "regenerator-runtime": "^0.13.7"
   },
   "devDependencies": {
+    "babel-preset-react-app": "~10.0.0",
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.10.4",
@@ -29,8 +29,8 @@
     "style-loader": "^1.0.1",
     "webpack": "^4.41.1",
     "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.8.2"
+    "webpack-dev-server": "^3.8.2",
+    "@car/eslint-config": "workspace:*"
   },
-  "author": "yancy",
   "license": "ISC"
 }

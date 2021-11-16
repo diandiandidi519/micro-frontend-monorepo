@@ -1,10 +1,10 @@
-import { registerMicroApps, start, Custom, createStore } from "../../../micro";
-import { loading } from "../store";
+import { registerMicroApps, start, Custom, createStore } from '@car/micro';
+import { loading } from '../store';
 
 //主子应用通信
 const custom = new Custom();
-custom.on("test", (data) => {
-  console.log("test事件触发");
+custom.on('test', (data) => {
+  console.log('test事件触发');
   console.log(data);
 });
 window.custom = custom;
@@ -26,18 +26,18 @@ export const registerApp = (list) => {
     beforeLoad: [
       () => {
         loading.changeLoading(true);
-        console.log("主应用开始加载");
+        console.log('主应用开始加载');
       },
     ],
     mounted: [
       () => {
         loading.changeLoading(false);
-        console.log("主应用渲染完成");
+        console.log('主应用渲染完成');
       },
     ],
     destroyed: [
       () => {
-        console.log("主应用卸载完成");
+        console.log('主应用卸载完成');
       },
     ],
   });

@@ -10,7 +10,11 @@ module.exports = {
   // Use single quotes instead of double quotes
   singleQuote: true,
 
+  semi: true,
+
+  tabWidth: 2,
+
   // For ES5, trailing commas cannot be used in function parameters; it is counterintuitive
   // to use them for arrays only
-  trailingComma: 'none'
+  trailingComma: 'all'
 };

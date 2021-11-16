@@ -26,7 +26,7 @@ packages:
     resolution: {integrity: sha512-lNUmDRVGpanCsiUN3NWxFTdwmdFI53xwhkTFfHDGTYk46ca7Ind3nanJc+U6Zj9Tv+9nTCWRBscWEW1DyKOpTw==}
     engines: {node: '>=8.0.0'}
     dependencies:
-      tslib: 2.1.0
+      tslib: 2.3.1
     dev: false
 
   /@azure/core-asynciterator-polyfill/1.0.0:
@@ -70,7 +70,7 @@ packages:
       '@azure/core-http': 1.2.6
       '@azure/core-tracing': 1.0.0-preview.11
       events: 3.3.0
-      tslib: 2.1.0
+      tslib: 2.3.1
     dev: false
 
   /@azure/core-paging/1.2.0:
@@ -104,7 +104,7 @@ packages:
     dependencies:
       '@opencensus/web-types': 0.0.7
       '@opentelemetry/api': 0.10.2
-      tslib: 2.1.0
+      tslib: 2.3.1
     dev: false
 
   /@azure/identity/1.0.3:
@@ -140,7 +140,7 @@ packages:
       '@azure/logger': 1.0.3
       '@opentelemetry/api': 0.10.2
       events: 3.3.0
-      tslib: 2.1.0
+      tslib: 2.3.1
     dev: false
 
   /@babel/code-frame/7.16.0:

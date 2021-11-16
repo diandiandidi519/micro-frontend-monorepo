@@ -1,5 +1,6 @@
 require('@car/eslint-config/patch/modern-module-resolution');
 module.exports = {
   root: true,
-  extends: ['@car/eslint-config/profile/vue2'],
+  extends: ['@car/eslint-config/profile/vue3'],
+  parserOptions: { tsconfigRootDir: __dirname },
 };

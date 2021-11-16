@@ -106,7 +106,7 @@
      *
      * This option is experimental. The default value is false.
      */
-    // "useWorkspaces": true
+    "useWorkspaces": true
   },
 
   /**
@@ -444,7 +444,7 @@
     //   "reviewCategory": "tools"
     // }
     {
-      "packageName": "eslint-config",
+      "packageName": "@car/eslint-config",
       "projectFolder": "tools/eslint-config"
     },
     {
@@ -466,6 +466,10 @@
     {
       "packageName": "main",
       "projectFolder": "apps/main"
+    },
+    {
+      "packageName": "@car/micro",
+      "projectFolder": "libraries/micro"
     }
   ]
 }

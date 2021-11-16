@@ -1,28 +1,25 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const packageName = require("./package.json").name;
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const packageName = require('./package.json').name;
 
 module.exports = {
-  entry: { path: ["regenerator-runtime/runtime", "./index.js"] },
+  entry: { path: ['regenerator-runtime/runtime', './index.js'] },
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "react16.js",
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'react16.js',
     umdNamedDefine: true,
-    publicPath: "http://localhost:9003",
+    publicPath: 'http://localhost:9003',
     library: `${packageName}`,
     jsonpFunction: `webpackJsonp_${packageName}`,
-    libraryTarget: "umd",
+    libraryTarget: 'umd',
   },
   module: {
     rules: [
       {
         test: /\.js(|x)$/,
         use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env", "@babel/preset-react"],
-          },
+          loader: 'babel-loader',
         },
       },
       {
@@ -30,12 +27,12 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             // options: {
             //   module: true,
             // },
           },
-          "sass-loader",
+          'sass-loader',
         ],
       },
     ],
@@ -46,16 +43,16 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./public/index.html",
+      template: './public/index.html',
     }),
 
     new MiniCssExtractPlugin({
-      filename: "[name].css",
+      filename: '[name].css',
     }),
   ],
   devServer: {
-    headers: { "Access-Control-Allow-Origin": "*" },
-    contentBase: path.join(__dirname, "dist"),
+    headers: { 'Access-Control-Allow-Origin': '*' },
+    contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 9003,
     historyApiFallback: true,

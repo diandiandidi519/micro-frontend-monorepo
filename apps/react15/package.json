@@ -1,6 +1,6 @@
 {
   "name": "react15",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,7 @@
     "sass-loader": "^6.0.7"
   },
   "devDependencies": {
+    "babel-preset-react-app": "~10.0.0",
     "@babel/core": "^7.7.2",
     "@babel/plugin-transform-react-jsx": "^7.7.0",
     "@babel/preset-env": "^7.7.1",
@@ -28,8 +29,8 @@
     "url-loader": "^4.1.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "webpack-dev-server": "^3.9.0",
+    "@car/eslint-config": "workspace:*"
   },
-  "author": "yancy",
   "license": "ISC"
 }

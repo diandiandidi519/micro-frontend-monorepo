@@ -11,8 +11,12 @@ package-lock.json
 shrinkwrap.json
 
 # Build outputs
-dist
+**/dist/
 lib
 
 # Prettier reformats code blocks inside Markdown, which affects rendered output
 *.md
+
+
+#node_modules
+node_modules

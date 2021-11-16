@@ -95,7 +95,7 @@ prettier
 nvm use lts/fermium
 
 # 全局安装 rush pnpm
-npm i -g yarn @microsoft/rush pnpm --registry=http://npm.byted.org
+npm i -g yarn @carsoft/rush pnpm --registry=http://npm.byted.org
 
 # 安装项目依赖
 rush update

@@ -1,6 +1,6 @@
-import { findAppByRoute } from "../util";
-import { getMainLifeCycle } from "../const/mainLifeCycle";
-import { loadHtml } from "../loader";
+import { findAppByRoute } from '../util';
+import { getMainLifeCycle } from '../const/mainLifeCycle';
+import { loadHtml } from '../loader';
 
 export const lifeCycle = async () => {
   // 获取到上一个子应用
@@ -8,7 +8,8 @@ export const lifeCycle = async () => {
   const prevApp = findAppByRoute(window.__ORIGIN_APP__);
   // 获取到要跳转的子应用
   const nextApp = findAppByRoute(window.__CURRENT_SUB_APP__);
-  console.log(prevApp, nextApp);
+  // console.log('切换了吗');
+  // console.log(prevApp, nextApp);
   if (!nextApp) {
     return;
   }
@@ -24,7 +25,7 @@ export const lifeCycle = async () => {
 };
 
 export const beforeLoad = async (app) => {
-  await runMainLifeCycle("beforeLoad");
+  await runMainLifeCycle('beforeLoad');
   const subApp = await loadHtml(app);
   subApp?.bootstrap?.();
   return subApp;
@@ -35,13 +36,13 @@ export const mounted = async (app) => {
     appInfo: app.appInfo,
     entry: app.entry,
   });
-  await runMainLifeCycle("mounted");
+  await runMainLifeCycle('mounted');
 };
 
 export const destroyed = async (app) => {
   app?.unmount?.();
   // 对应的执行主应用的生命周期
-  await runMainLifeCycle("destroyed");
+  await runMainLifeCycle('destroyed');
 };
 
 export const runMainLifeCycle = async (type) => {
