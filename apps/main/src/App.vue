@@ -9,15 +9,15 @@
 </template>
 
 <script>
-import Header from "./components/Header";
-import MainNav from "./components/MainNav";
-import Loading from "./components/Loading";
+import Header from './components/Header';
+import MainNav from './components/MainNav';
+import Loading from './components/Loading';
 // import Footer from "./components/Footer";
 
-import { loading, header, nav } from "./store";
+import { loading, header, nav } from './store';
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     Header,
     MainNav,

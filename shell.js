@@ -18,6 +18,10 @@ const filePath = {
     path: path.join(__dirname, 'apps/react16'),
     cmd: 'rushx start',
   },
+  main: {
+    path: path.join(__dirname, 'apps/main'),
+    cmd: 'rushx start',
+  },
 };
 
 function runChild() {

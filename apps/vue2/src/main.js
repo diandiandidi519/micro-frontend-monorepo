@@ -3,7 +3,7 @@ import App from './App.vue';
 import router from './router';
 // Vue.config.productionTip = false;
 
-let instance = null;
+let instance;
 const render = () => {
   instance = new Vue({
     router,
